@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>End of Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #111;
+    }
+
+    #phaser-end {
+      width: 100vw;
+      height: 100vh;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div id="phaser-end"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.js"></script>
+  <script src="src/scenes/EndScene.js"></script>
+  <script>
+    const config = {
+      type: Phaser.AUTO,
+      scale: {
+        mode: Phaser.Scale.RESIZE, // responsive scaling
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+        parent: 'phaser-end',
+        width: window.innerWidth,
+        height: window.innerHeight,
+      },
+      scene: [EndScene],
+      backgroundColor: '#111'
+    };
+
+    const game = new Phaser.Game(config);
+
+    // Optional: Recalculate canvas on window resize (Phaser handles this automatically in RESIZE mode)
+    window.addEventListener('resize', () => {
+      game.scale.resize(window.innerWidth, window.innerHeight);
+    });
+  </script>
+</body>
+</html>
