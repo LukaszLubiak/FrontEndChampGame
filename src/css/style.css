@@ -82,7 +82,8 @@ select {
   border-radius: 5%;
   height: 35px;
   background: #42A5F5;
-  color: #fff;           
+  color: #fff;    
+  text-align: center;
 }
 
 /* GAME PROGRESS */
