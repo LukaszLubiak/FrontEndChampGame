@@ -75,7 +75,7 @@ h2 span {
 }
 select {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0px;
   width: 220px;
   padding: 5px 10px;
@@ -201,14 +201,10 @@ select {
 
 #question {
   background: #1E88E5;
-  padding: 2rem;
+  padding: 1rem;
   border: 2px solid #0B3D91;
   border-radius: 0.5rem;
-  font-size: 2.8rem; /* Increase this value as needed */
-  font-weight: 600;
-  color: #ffffff;
-  text-align: center;
-  line-height: 1.4;
+  font-size: 3rem;
 }
 
 i,
@@ -308,17 +304,6 @@ button.close:focus {
   color: #1E88E5;
 }
 
-.GitHub i {
-  color: #E3F2FD;
-}
-
-.GitHub i:hover,
-.mail i:hover {
-  transition: 1.5s;
-  font-size: 4rem;
-  color: #1E88E5;
-}
-
 /* HIDDEN ELEMENTS */
 
 .hideBtn {
@@ -356,7 +341,7 @@ button.close:focus {
   }
   #question {
     margin: 1rem 0 1rem 0;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   #qz-footer {
     padding: 0.5rem;
