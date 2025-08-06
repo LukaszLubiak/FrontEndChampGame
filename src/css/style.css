@@ -201,9 +201,14 @@ select {
 
 #question {
   background: #1E88E5;
-  padding: 1rem;
+  padding: 2rem;
   border: 2px solid #0B3D91;
   border-radius: 0.5rem;
+  font-size: 2.8rem; /* Increase this value as needed */
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.4;
 }
 
 i,
