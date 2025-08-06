@@ -14,7 +14,7 @@ class WelcomeScene extends Phaser.Scene {
 
     this.welcomeText = this.add.text(0, 0, 'Welcome to FrontEndChamp Game!', {
       fontFamily: 'Arial',
-      fontSize: '32px', // initial value, will be updated responsively
+      fontSize: '32px',
       color: '#ffffff',
       fontStyle: 'bold',
       align: 'center',
@@ -70,7 +70,7 @@ class WelcomeScene extends Phaser.Scene {
     }
 
     if (this.startImage) {
-      this.startImage.setPosition(width / 2, height - 100);
+      this.startImage.setPosition(width / 2, height - 150);
     }
   }
 }
