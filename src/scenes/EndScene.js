@@ -26,7 +26,7 @@ class EndScene extends Phaser.Scene {
     }).setOrigin(0.5).setInteractive({ useHandCursor: true });
 
     this.restartBtn.on('pointerdown', () => {
-      window.location.href = "welcome.html";
+      window.location.href = "index.html";
     });
 
     this.resizeContent(); // Set initial layout
@@ -54,3 +54,4 @@ class EndScene extends Phaser.Scene {
     });
   }
 }
+
